@@ -1,12 +1,28 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: white;
+  background: #EFEFEA;
+  height: 100px;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+// .navbar .navbar-brand img {
+//   width: 40px;
+// }
+
+.navbar img {
+  height: 90px;
+}
+
+.button {
+  background: #E8A2C4;
+  color: #8E376C;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.body {
+  background: #EFEFEA;
 }

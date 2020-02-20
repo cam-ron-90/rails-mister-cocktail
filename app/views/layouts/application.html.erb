@@ -11,8 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
 
-  <body>
+  <body class="body">
+    <div class="navbar">
+      <img src="https://cdn.dribbble.com/users/11789/screenshots/1877272/600x400c.png" alt="" >
+      <%= link_to 'Add Cocktail', new_cocktail_path, class: "button" %>
+    </div>
+
     <%= yield %>
+
 
     <%= javascript_include_tag "application" %>
     <%= javascript_pack_tag "application" %>

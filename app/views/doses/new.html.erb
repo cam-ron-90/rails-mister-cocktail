@@ -1,0 +1,8 @@
+<h1>Add Dose</h1>
+<h3><%= @cocktail.name %></h3>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description, placeholder: 'More litres Please' %>
+  <%= f.association :ingredient %>
+  <%= f.submit %>
+<% end %>
+
