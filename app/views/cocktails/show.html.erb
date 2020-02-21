@@ -13,9 +13,8 @@
     <% end %>
   </ul>
 
-  <%= link_to 'Add Dose', new_cocktail_dose_path(@cocktail) %>
-  <%= link_to 'Home', cocktails_path, class:'btn btn-primary' %>
-
-  <%= link_to 'Edit Cocktail', edit_cocktail_path(@cocktail), class:'btn btn-primary' %>
+  <%= link_to 'Add Ingredient', new_cocktail_dose_path(@cocktail), class:'button'%>
+  <%= link_to 'Edit Cocktail', edit_cocktail_path(@cocktail), class:'button' %>
+  <%= link_to 'Home', cocktails_path, class:'button' %>
 </div>
 
