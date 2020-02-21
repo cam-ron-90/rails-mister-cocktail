@@ -7,9 +7,9 @@
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
 
-      <%= link_to cocktail_path(cocktail) do %>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.url %>)">
-        <%= cocktail.name %>
+      <%= link_to cocktail_path(cocktail), id: "card-text" do %>
+        <div class="new-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.url %>)">
+        <p><%= cocktail.name %></p>
         </div>
       <% end %>
     <% end %>
