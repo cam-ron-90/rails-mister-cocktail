@@ -1,7 +1,17 @@
 .navbar {
   justify-content: space-between;
   background: #EFEFEA;
-  height: 100px;
+  // background-color: transparent;
+  // transition: 0.5s background-color ease;
+  height: 80px;
+  h1 {
+    font-family: 'Montserrat';
+  font-weight: 300;
+
+  }
+  font-family: 'Montserrat';
+  font-weight: 300;
+
 }
 
 .navbar .navbar-collapse {
@@ -13,16 +23,27 @@
 // }
 
 .navbar img {
-  height: 90px;
+  height: 90%;
 }
 
 .button {
-  background: #E8A2C4;
-  color: #8E376C;
-  padding: 12px;
-  border-radius: 8px;
+  background: #934673;
+  color: #EFEFEA;
+  padding: 8px 12px;
+  border: solid 1px #4C3149;
+  // border-radius: 8px;
+}
+
+.button:hover {
+    background: #934673;
+    color: #E8A2C4;
+    text-decoration: none;
 }
 
 .body {
   background: #EFEFEA;
 }
+
+
+// background: #E8A2C4;
+//   color: #934673;
