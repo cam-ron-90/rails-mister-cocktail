@@ -17,8 +17,18 @@
 
     <div class="navbar fixed-top">
       <!-- <img src="https://cdn.dribbble.com/users/11789/screenshots/1877272/600x400c.png" alt="" > -->
-      <%= image_tag "icon.png", alt: "CocktaiLabicon"%>
-      <%= image_tag "label.png", alt: "CocktaiLablabel"%>
+      <%#= image_tag "icon.png", alt: "CocktaiLabicon"%>
+      <%= link_to root_path, class: "icon" do %>
+        <div>
+          <%= image_tag "icon.png", alt: "CocktaiLabicon", class: "icon"%>
+        </div>
+      <% end %>
+      <%#= image_tag "label.png", alt: "CocktaiLablabel"%>
+      <%= link_to root_path, class: "label" do %>
+        <div>
+          <%= image_tag "label.png", alt: "CocktaiLablabel", class: "label"%>
+        </div>
+      <% end %>
       <!-- <h1>COCKTAIL'AB</h1> -->
       <%= link_to 'Add Cocktail', new_cocktail_path, class: "button" %>
 

@@ -19,6 +19,9 @@
 
 .fa-trash {
   color: #E8A2C4;
+  &:hover {
+    color: #934673;
+  }
 }
 
 #card-text {
