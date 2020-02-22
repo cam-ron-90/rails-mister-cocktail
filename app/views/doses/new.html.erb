@@ -4,7 +4,7 @@
   <%= simple_form_for [@cocktail, @dose] do |f| %>
     <%= f.input :description, placeholder: 'More litres Please' %>
     <%= f.association :ingredient %>
-    <%= f.submit %>
+    <%= f.button :submit, 'Create Ingredient' %>
   <% end %>
   <br>
 <%= link_to 'Home', root_path, class:'button' %>

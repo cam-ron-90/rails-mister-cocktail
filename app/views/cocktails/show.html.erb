@@ -5,7 +5,7 @@
 </div>
 <div class="container grid">
   <div>
-    <h1>Ingreditents List</h1>
+    <h1>INGREDIENTS LIST</h1>
     <ul>
       <% @cocktail.doses.each do |dose| %>
         <li>
@@ -24,11 +24,11 @@
 
 
   <div>
-    <h1>Add Ingredient</h1>
+    <h1>ADD INGREDIENT</h1>
     <%= simple_form_for [@cocktail, Dose.new] do |f| %>
       <%= f.input :description, placeholder: 'More litres Please' %>
       <%= f.association :ingredient %>
-      <%= f.submit %>
+      <%= f.button :submit, 'Create Ingredient', class:'form-button' %>
     <% end %>
   </div>
 

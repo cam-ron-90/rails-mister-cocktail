@@ -1,12 +1,16 @@
-<div class="container">
-  <h1>Edit Cocktail</h1>
 
-  <%= simple_form_for [@cocktail] do |f| %>
-    <%= f.input :name %>
-    <%= f.input :url %>
-    <%= f.submit %>
-  <% end %>
-  <br>
-  <%= link_to 'Home', root_path, class:'button' %>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @cocktail.url %>);">
+  <div class="container">
+    <h1>Edit Cocktail</h1>
+    <div class="container">
+      <%= simple_form_for [@cocktail] do |f| %>
+        <%= f.input :name %>
+        <%= f.input :url %>
+        <%= f.button :submit, 'Edit Cocktail', class:'form-button' %>
+      <% end %>
+    </div>
+    <br>
+    <%#= link_to 'Home', root_path, class:'button' %>
+  </div>
 </div>
-
