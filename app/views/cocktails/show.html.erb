@@ -1,4 +1,8 @@
+
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @cocktail.url %>);">
+  <div class="breadcrumbs">
+    <%= link_to 'Home', root_path, class:'bread-button' %>  /  <%= @cocktail.name %>
+  </div>
   <div class="container">
     <h1><%= @cocktail.name %><h1>
   </div>
@@ -19,7 +23,7 @@
 
     <%#= link_to 'Add Ingredient', new_cocktail_dose_path(@cocktail), class:'button'%>
     <%= link_to 'Edit Cocktail', edit_cocktail_path(@cocktail), class:'button' %>
-    <%= link_to 'Home', root_path, class:'button' %>
+    <%#= link_to 'Home', root_path, class:'button' %>
   </div>
 
 

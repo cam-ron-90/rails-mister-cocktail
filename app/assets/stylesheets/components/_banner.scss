@@ -4,6 +4,24 @@
   padding: 150px 0;
 }
 
+.breadcrumbs {
+  margin-top: -140px;
+  margin-bottom: 120px;
+  padding-left: 16px;
+  font-family: 'Montserrat';
+  color: #E8A2C4;
+}
+
+.bread-button {
+  font-family: 'Montserrat';
+  color: #E8A2C4;
+}
+
+.bread-button:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .banner h1 {
   margin: 0;
   color: #EFEFEA;
