@@ -8,7 +8,7 @@
     <div class="container">
       <%= simple_form_for [@cocktail] do |f| %>
         <%= f.input :name %>
-        <%= f.input :url %>
+        <%= f.input :url, label: 'Image URL' %>
         <%= f.button :submit, 'Create Cocktail', class:'form-button' %>
       <% end %>
     </div>
